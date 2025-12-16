@@ -48,4 +48,22 @@
 
 ---
 
-*Last updated: Step 4 completion*
+## Step 5: City Management & localStorage ✅
+- (Implemented in Step 4 - addCity, removeCity, saveToStorage, loadFromStorage)
+- Tests covered in Step 4
+
+---
+
+## Step 6: README Documentation ✅
+- Created comprehensive README.md
+- Features list and available cities
+- Installation and setup instructions
+- Test running commands
+- Usage guide for adding/removing cities
+- Project structure documentation
+- GitHub Pages deployment instructions
+- Technical details on timezone handling and clock calculations
+
+---
+
+*Last updated: Step 6 completion*
