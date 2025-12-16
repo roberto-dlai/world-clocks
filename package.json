@@ -1,0 +1,28 @@
+{
+  "name": "world-clocks",
+  "version": "1.0.0",
+  "description": "A website displaying up to 5 analog clocks for different world cities with real-time updates",
+  "main": "js/clocks.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:all": "npm run test && npm run test:e2e"
+  },
+  "keywords": [
+    "clock",
+    "world-clock",
+    "timezone",
+    "analog-clock"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
