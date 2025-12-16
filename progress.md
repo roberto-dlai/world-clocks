@@ -10,4 +10,14 @@
 
 ---
 
-*Last updated: Step 1 completion*
+## Step 2: HTML Structure ✅
+- Created index.html with responsive viewport
+- Added header with "World Clocks" title and "Add City" button
+- Added city selection dropdown
+- Created clock template with SVG-based clock face
+- Clock template includes: hour/minute/second hands, remove button, city name, digital time
+- Tests: 13 passed, 0 failed
+
+---
+
+*Last updated: Step 2 completion*

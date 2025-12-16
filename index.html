@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clocks</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>World Clocks</h1>
+    <div class="header-controls">
+      <button id="add-city-btn" class="btn btn-primary">Add City</button>
+      <select id="city-dropdown" class="city-dropdown hidden">
+        <option value="">Select a city...</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="clock-container" id="clock-container">
+    <!-- Clocks will be dynamically inserted here -->
+  </main>
+
+  <!-- Clock Template -->
+  <template id="clock-template">
+    <div class="clock-card" data-city-id="">
+      <button class="remove-btn" aria-label="Remove clock">&times;</button>
+      <div class="clock-face">
+        <svg viewBox="0 0 200 200" class="clock-svg">
+          <!-- Clock face -->
+          <circle cx="100" cy="100" r="95" class="clock-circle" />
+
+          <!-- Hour markers -->
+          <g class="hour-markers">
+            <line x1="100" y1="10" x2="100" y2="20" class="marker" />
+            <line x1="150" y1="18" x2="145" y2="27" class="marker" transform="rotate(30 100 100)" />
+            <line x1="182" y1="50" x2="173" y2="55" class="marker" transform="rotate(60 100 100)" />
+            <line x1="190" y1="100" x2="180" y2="100" class="marker" />
+            <line x1="182" y1="150" x2="173" y2="145" class="marker" transform="rotate(-60 100 100)" />
+            <line x1="150" y1="182" x2="145" y2="173" class="marker" transform="rotate(-30 100 100)" />
+            <line x1="100" y1="190" x2="100" y2="180" class="marker" />
+            <line x1="50" y1="182" x2="55" y2="173" class="marker" transform="rotate(30 100 100)" />
+            <line x1="18" y1="150" x2="27" y2="145" class="marker" transform="rotate(60 100 100)" />
+            <line x1="10" y1="100" x2="20" y2="100" class="marker" />
+            <line x1="18" y1="50" x2="27" y2="55" class="marker" transform="rotate(-60 100 100)" />
+            <line x1="50" y1="18" x2="55" y2="27" class="marker" transform="rotate(-30 100 100)" />
+          </g>
+
+          <!-- Clock hands -->
+          <line x1="100" y1="100" x2="100" y2="45" class="hand hour-hand" />
+          <line x1="100" y1="100" x2="100" y2="25" class="hand minute-hand" />
+          <line x1="100" y1="100" x2="100" y2="20" class="hand second-hand" />
+
+          <!-- Center dot -->
+          <circle cx="100" cy="100" r="5" class="center-dot" />
+        </svg>
+      </div>
+      <div class="clock-info">
+        <h2 class="city-name"></h2>
+        <p class="digital-time"></p>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/clocks.js"></script>
+</body>
+</html>
