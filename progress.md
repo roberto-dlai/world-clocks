@@ -33,4 +33,19 @@
 
 ---
 
-*Last updated: Step 3 completion*
+## Step 4: Core JavaScript Logic ✅
+- Created clocks.js with 15 cities and timezone data
+- Implemented getTimeForTimezone() using Intl API
+- Implemented calculateHandAngles() for clock hand rotation
+- Implemented formatDigitalTime() for digital display
+- Added clock rendering functions (createClockElement, updateClock)
+- Added city management (addCity, removeCity, getCityById)
+- Added localStorage persistence (saveToStorage, loadFromStorage)
+- Setup event listeners for UI interactions
+- Auto-initialization on DOM ready
+- Exported functions for testing
+- Tests: 64 passed, 0 failed
+
+---
+
+*Last updated: Step 4 completion*
